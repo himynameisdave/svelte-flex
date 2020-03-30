@@ -1,0 +1,41 @@
+{
+  "name": "svelte-flex",
+  "description": "A reusable flexbox component for Svelte",
+  "author": {
+    "name": "himynameisdave",
+    "email": "d@velunny.com"
+  },
+  "svelte": "src/index.js",
+  "module": "lib/index.mjs",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rollup": "^2.3.1",
+    "rollup-plugin-svelte": "^5.2.0",
+    "svelte": "^3.20.1"
+  },
+  "keywords": [
+    "svelte",
+    "svelte-component",
+    "flexbox",
+    "svelte-flexbox",
+    "ui-component",
+    "layout-component"
+  ],
+  "files": [
+    "src",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himynameisdave/svelte-flex.git"
+  },
+  "homepage": "https://himynameisdave.github.io/svelte-flex/",
+  "license": "MIT",
+  "sideEffects": false,
+  "private": false
+}
