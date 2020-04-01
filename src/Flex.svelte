@@ -3,8 +3,11 @@
   export let direction = 'row';
   export let align = 'center';
   export let justify = 'center';
+  export let reverse = false;
 
-  let className = `flex flex-direction--${direction} flex-align--${align} flex-justify--${justify}`;
+  const reverseClass = reverse ? '--reverse' : '';
+
+  let className = `flex flex-direction--${direction}${reverseClass} flex-align--${align} flex-justify--${justify}`;
 
 </script>
 
@@ -18,6 +21,13 @@
   }
   .flex-direction--column {
     flex-direction: column;
+  }
+  /* Reverse the order */
+  .flex-direction--row--reverse {
+    flex-direction: row-reverse;
+  }
+  .flex-direction--column--reverse {
+    flex-direction: column-reverse;
   }
   /* Align: 'start' | 'center' | 'end' */
   .flex-align--start {
