@@ -19,6 +19,8 @@
     -->
 </div>
 
+---
+
 A simple and reusable flexbox component for Svelte.
 
 ### Installation
@@ -57,11 +59,14 @@ Import the `Flex` component and use it.
 
 #### Props
 
+All props are optional (as they all have default values).
+
 **Prop** | **Possible Values** | **Default Value**
 ---|---|---
 [`direction`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) | `'row'` \| `'column'` | `'row'`
 [`align`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items) | `'start'` \| `'center'` \| `'end'` | `'center'`
-[`justify`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) | `'start'` \| `'center'` \| `'end'` | `'center'`
+[`justify`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) | `'start'` \| `'center'` \| `'end'` \| `'around'` \| `'between'` \| `'evenly'`  | `'center'`
+[`reverse`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction#Result) | `true` \| `false` | `false`
 
 ### Roadmap
 
@@ -71,4 +76,4 @@ Import the `Flex` component and use it.
 
 ---
 
-_👌 Built by [Dave Lunny](http://himynameisdave.com) in 2020._
+_👌 Built by [Dave Lunny](http://himynameisdave.com)._

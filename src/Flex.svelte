@@ -39,7 +39,7 @@
   .flex-align--end {
     align-items: flex-end;
   }
-  /* Justfy: 'start' | 'center' | 'end' */
+  /* Justfy: 'start' | 'center' | 'end' | 'around' | 'between' | 'evenly' */
   .flex-justify--start {
     justify-content: flex-start;
   }
@@ -48,6 +48,15 @@
   }
   .flex-justify--end {
     justify-content: flex-end;
+  }
+  .flex-justify--around {
+    justify-content: space-around;
+  }
+  .flex-justify--between {
+    justify-content: space-between;
+  }
+  .flex-justify--evenly {
+    justify-content: space-evenly;
   }
 </style>
 
