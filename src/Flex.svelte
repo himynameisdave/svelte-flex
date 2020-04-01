@@ -29,7 +29,7 @@
   .flex-direction--column--reverse {
     flex-direction: column-reverse;
   }
-  /* Align: 'start' | 'center' | 'end' */
+  /* Align: 'start' | 'center' | 'end' | 'stretch' */
   .flex-align--start {
     align-items: flex-start;
   }
@@ -38,6 +38,9 @@
   }
   .flex-align--end {
     align-items: flex-end;
+  }
+  .flex-align--stretch {
+    align-items: stretch;
   }
   /* Justfy: 'start' | 'center' | 'end' | 'around' | 'between' | 'evenly' */
   .flex-justify--start {

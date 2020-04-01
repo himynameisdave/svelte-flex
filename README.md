@@ -21,7 +21,7 @@
 
 ---
 
-A simple and reusable flexbox component for Svelte.
+A simple and reusable flexbox component for Svelte. Has sane defaults, so you can plop it right into your app and focus on making cool stuff.
 
 ### Installation
 
@@ -54,6 +54,8 @@ Import the `Flex` component and use it.
 
 <Flex>
   <div>Flexbox child!</div>
+  <div>Flexbox child!</div>
+  <div>Flexbox child!</div>
 </Flex>
 ```
 
@@ -64,15 +66,13 @@ All props are optional (as they all have default values).
 **Prop** | **Possible Values** | **Default Value**
 ---|---|---
 [`direction`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) | `'row'` \| `'column'` | `'row'`
-[`align`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items) | `'start'` \| `'center'` \| `'end'` | `'center'`
+[`align`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items) | `'start'` \| `'center'` \| `'end'` \| `'stretch'` | `'center'`
 [`justify`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) | `'start'` \| `'center'` \| `'end'` \| `'around'` \| `'between'` \| `'evenly'`  | `'center'`
 [`reverse`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction#Result) | `true` \| `false` | `false`
 
-### Roadmap
+### Contributing
 
-- [ ] Support more values for the default properties.
-- [ ] Support more flexbox CSS properties.
-- [ ] Attempt to reduce CSS size by removing unused selectors.
+Feel free to [file an issue](https://github.com/himynameisdave/svelte-flex/issues/new) or open a pull request.
 
 ---
 
