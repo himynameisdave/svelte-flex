@@ -15,8 +15,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "test": "jest src",
-    "test:watch": "npm run test -- --watch"
+    "test": "jest src"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
