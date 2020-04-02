@@ -1,11 +1,11 @@
 <div align="center" margin="0 auto 20px">
   <h1>svelte-flex</h1>
   <p style="font-style: italic;">💪 A reusable flexbox component for Svelte.</p>
-    <!-- 
   <div>
     <a href='https://travis-ci.org/himynameisdave/svelte-flex'>
         <img src="https://api.travis-ci.org/himynameisdave/svelte-flex.svg?branch=master" alt="Travis Badge" />
     </a>
+    <!-- 
     <a href="https://bundlephobia.com/result?p=svelte-flex">
         <img src="https://img.shields.io/bundlephobia/min/svelte-flex.svg" alt="Bundle size (minified)" />
     </a>
@@ -15,8 +15,8 @@
     <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fhimynameisdave%2Fsvelte-flex?ref=badge_shield" alt="FOSSA Status">
         <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fhimynameisdave%2Fsvelte-flex.svg?type=shield"/>
     </a>
-  </div>
     -->
+  </div>
 </div>
 
 ---
@@ -70,9 +70,11 @@ All props are optional (as they all have default values).
 [`justify`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) | `'start'` \| `'center'` \| `'end'` \| `'around'` \| `'between'` \| `'evenly'`  | `'center'`
 [`reverse`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction#Result) | `true` \| `false` | `false`
 
+Check out the [test suite](https://github.com/himynameisdave/svelte-flex/blob/026926b4a41234a26607e05a619e2ee9acbf2ebd/src/__tests__/Flex.spec.js#L11) if you're unsure what CSS styles are applied by these props.
+
 ### Contributing
 
-Feel free to [file an issue](https://github.com/himynameisdave/svelte-flex/issues/new) or open a pull request.
+Feel free to [file an issue](https://github.com/himynameisdave/svelte-flex/issues/new) or open a pull request. Ensure that you add tests for any new functionality.
 
 ---
 
