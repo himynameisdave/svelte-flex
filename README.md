@@ -1,6 +1,6 @@
 <div align="center" margin="0 auto 20px">
   <h1>svelte-flex</h1>
-  <p style="font-style: italic;">💪 A reusable flexbox component for Svelte.</p>
+  <p style="font-style: italic;">💪 A simple and reusable flexbox component for Svelte.</p>
   <div>
     <a href='https://travis-ci.com/github/himynameisdave/svelte-flex'>
         <img src="https://travis-ci.com/himynameisdave/svelte-flex.svg?branch=master" alt="Travis Badge" />
@@ -16,7 +16,12 @@
 
 ---
 
-A simple and reusable flexbox component for Svelte. Has sane defaults, so you can plop it right into your app and focus on making cool stuff.
+A simple and reusable flexbox component for [Svelte](https://svelte.dev/).
+
+- Sane defaults.
+- Simple API.
+- Reactive props.
+- Minimal size.
 
 [**Try me on CodeSandbox!**](https://codesandbox.io/s/svelte-flex-5s45y)
 
@@ -30,19 +35,9 @@ npm install svelte-flex
 yarn add svelte-flex
 ```
 
-**Browser/UMD**
-
-If you want to just import this library directly in the browser, you can add the following script tag:
-
-```html
-<script src="https://unpkg.com/svelte-flex/bin/index.umd.js" />
-```
-
-This will expose `Flex` as a component in the global scope.
-
 ### Usage
 
-Import the `Flex` component and use it.
+Import the `Flex` component and use it in your Svelte project.
 
 ```svelte
 <script>
