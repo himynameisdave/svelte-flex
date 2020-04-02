@@ -1,7 +1,7 @@
 {
   "name": "svelte-flex",
   "description": "A reusable flexbox component for Svelte",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "author": {
     "name": "himynameisdave",
     "email": "d@velunny.com"
@@ -15,7 +15,8 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "test": "jest src"
+    "test": "jest src",
+    "release": "np --no-yarn"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
