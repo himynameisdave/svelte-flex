@@ -1,6 +1,9 @@
 # Build dir
 lib/
 
+# Test app, for testing out changes
+test-app/
+
 # Logs
 logs
 *.log

@@ -69,6 +69,8 @@ All props are optional (as they all have default values).
 
 Check out the [test suite](https://github.com/himynameisdave/svelte-flex/blob/026926b4a41234a26607e05a619e2ee9acbf2ebd/src/__tests__/Flex.spec.js#L11) if you're unsure what CSS styles are applied by these props.
 
+The props are reactive, meaning that if they are dynamically updated, the component will update in response.
+
 ### Contributing
 
 Feel free to [file an issue](https://github.com/himynameisdave/svelte-flex/issues/new) or open a pull request. Ensure that you add tests for any new functionality.

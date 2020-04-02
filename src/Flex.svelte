@@ -5,9 +5,12 @@
   export let justify = 'center';
   export let reverse = false;
 
-  const reverseClass = reverse ? '--reverse' : '';
-
-  let className = `flex flex-direction--${direction}${reverseClass} flex-align--${align} flex-justify--${justify}`;
+  $: className = [
+    'flex',
+    `flex-direction--${direction}${reverse ? '--reverse' : ''}`,
+    `flex-align--${align}`,
+    `flex-justify--${justify}`
+  ].join(' ');
 
 </script>
 
