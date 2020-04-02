@@ -2,26 +2,23 @@
   <h1>svelte-flex</h1>
   <p style="font-style: italic;">💪 A reusable flexbox component for Svelte.</p>
   <div>
-    <a href='https://travis-ci.org/himynameisdave/svelte-flex'>
+    <a href='https://travis-ci.com/github/himynameisdave/svelte-flex'>
         <img src="https://api.travis-ci.org/himynameisdave/svelte-flex.svg?branch=master" alt="Travis Badge" />
     </a>
-    <!-- 
+    <a href="https://packagephobia.now.sh/result?p=svelte-flex">
+        <img src="https://packagephobia.now.sh/badge?p=svelte-flex" alt="Install size" />
+    </a>
     <a href="https://bundlephobia.com/result?p=svelte-flex">
         <img src="https://img.shields.io/bundlephobia/min/svelte-flex.svg" alt="Bundle size (minified)" />
     </a>
-    <a href="https://www.npmjs.com/package/svelte-flex">
-        <img src="https://img.shields.io/npm/dm/svelte-flex.svg" alt="Downloads">
-    </a>
-    <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fhimynameisdave%2Fsvelte-flex?ref=badge_shield" alt="FOSSA Status">
-        <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fhimynameisdave%2Fsvelte-flex.svg?type=shield"/>
-    </a>
-    -->
   </div>
 </div>
 
 ---
 
 A simple and reusable flexbox component for Svelte. Has sane defaults, so you can plop it right into your app and focus on making cool stuff.
+
+[**Try me on CodeSandbox!**](https://codesandbox.io/s/svelte-flex-5s45y)
 
 ### Installation
 
