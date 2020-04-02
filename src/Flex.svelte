@@ -15,7 +15,7 @@
   .flex {
     display: flex;
   }
-  /* Direction: row | column */
+  /* Direction: 'row' | 'column' */
   .flex-direction--row {
     flex-direction: row;
   }
