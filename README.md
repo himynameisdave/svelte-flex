@@ -62,11 +62,11 @@ All props are optional (as they all have default values).
 [`justify`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) | `'start'` \| `'center'` \| `'end'` \| `'around'` \| `'between'` \| `'evenly'`  | `'center'`
 [`reverse`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction#Result) | `true` \| `false` | `false`
 
-Check out the [test suite](https://github.com/himynameisdave/svelte-flex/blob/026926b4a41234a26607e05a619e2ee9acbf2ebd/src/__tests__/Flex.spec.js#L11) if you're unsure what CSS styles are applied by these props.
+Check out the [test suite](https://github.com/himynameisdave/svelte-flex/blob/master/src/__tests__/Flex.spec.js#L11) if you're unsure what CSS styles are applied by these props.
 
 The props are reactive, meaning that if they are dynamically updated, the component will update in response.
 
-##### Additional Props
+#### Additional Props
 
 Any additional props you provide to `Flex` will be spread onto the root element. This includes custom CSS classes, which will be applied after the flex classes:
 
