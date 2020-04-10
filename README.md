@@ -66,6 +66,25 @@ Check out the [test suite](https://github.com/himynameisdave/svelte-flex/blob/02
 
 The props are reactive, meaning that if they are dynamically updated, the component will update in response.
 
+##### Additional Props
+
+Any additional props you provide to `Flex` will be spread onto the root element. This includes custom CSS classes, which will be applied after the flex classes:
+
+**Input**
+
+```html
+<Flex class="my-custom-class" aria-label="flex-boi">
+  <span>Flex child</span>
+</Flex>
+```
+
+**HTML Output**
+```html
+<div class="flex flex-direction--row flex-align--center flex-justify--center my-custom-class" aria-label="flex-boi">
+  <span>Flex child</span>
+</div>
+```
+
 ### Contributing
 
 Feel free to [file an issue](https://github.com/himynameisdave/svelte-flex/issues/new) or open a pull request. Ensure that you add tests for any new functionality.

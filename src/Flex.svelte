@@ -9,7 +9,9 @@
     'flex',
     `flex-direction--${direction}${reverse ? '--reverse' : ''}`,
     `flex-align--${align}`,
-    `flex-justify--${justify}`
+    `flex-justify--${justify}`,
+    //  Apply any additional/custom classNames, if provided
+    $$restProps.class ? $$restProps.class : '',
   ].join(' ');
 
 </script>
@@ -66,6 +68,6 @@
   }
 </style>
 
-<div class={className}>
+<div {...$$restProps} class={className}>
 	<slot></slot>
 </div>

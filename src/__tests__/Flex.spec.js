@@ -22,6 +22,16 @@ describe('<Flex /> component', () => {
     expect(container).toHaveStyle('justify-content: center');
   });
 
+  test('additional props are spread onto the element', () => {
+    const container = renderFlex({ label: 'flexy-mcflexbox' });
+    expect(container).toHaveAttribute('label', 'flexy-mcflexbox');
+  });
+  
+  test('custom classNames will be applied to the element', () => {
+    const container = renderFlex({ class: 'custom-class' });
+    expect(container.classList.contains('custom-class')).toBe(true);
+  });
+
   describe('direction prop', () => {
     // 'row' | 'column'
     test('row', () => {
