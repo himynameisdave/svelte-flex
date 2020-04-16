@@ -53,7 +53,7 @@
     "type": "git",
     "url": "git+https://github.com/himynameisdave/svelte-flex.git"
   },
-  "homepage": "https://himynameisdave.github.io/svelte-flex/",
+  "homepage": "https://github.com/himynameisdave/svelte-flex",
   "license": "MIT",
   "sideEffects": false,
   "private": false
