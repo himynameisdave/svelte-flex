@@ -33,6 +33,9 @@
     "svelte": "^3.29.7",
     "svelte-jester": "^1.1.5"
   },
+  "peerDependencies": {
+    "svelte": ">= 3"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "npm test"
