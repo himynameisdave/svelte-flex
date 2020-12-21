@@ -21,7 +21,9 @@ export default {
 		}
 	],
 	plugins: [
-		svelte(),
+		svelte({
+			emitCss: false,
+		}),
 		resolve()
 	]
 };
