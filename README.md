@@ -2,7 +2,7 @@
   <h1>svelte-flex</h1>
   <p style="font-style: italic;">💪 A simple and reusable flexbox component for Svelte.</p>
   <div>
-    <a href='https://github.com/himynameisdave/svelte-flex/actions?query=workflow%3Atest+branch%3Amain'>
+    <a href='https://github.com/himynameisdave/svelte-flex/actions?query=workflow%3Atest+branch%3Amaster'>
       <img src="https://github.com/himynameisdave/svelte-flex/workflows/test/badge.svg" alt="GitHub Actions - Test Workflow Badge" />
     </a>
     <a href="https://packagephobia.now.sh/result?p=svelte-flex">
