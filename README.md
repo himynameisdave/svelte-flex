@@ -8,6 +8,7 @@
     <a href="https://packagephobia.now.sh/result?p=svelte-flex">
         <img src="https://packagephobia.now.sh/badge?p=svelte-flex" alt="Install size" />
     </a>
+<a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fhimynameisdave%2Fsvelte-flex?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhimynameisdave%2Fsvelte-flex.svg?type=shield"/></a>
     <a href="https://bundlephobia.com/result?p=svelte-flex">
         <img src="https://img.shields.io/bundlephobia/min/svelte-flex.svg" alt="Bundle size (minified)" />
     </a>
@@ -92,3 +93,7 @@ Feel free to [file an issue](https://github.com/himynameisdave/svelte-flex/issue
 ---
 
 _👌 Built by [Dave Lunny](http://himynameisdave.com)._
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhimynameisdave%2Fsvelte-flex.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fhimynameisdave%2Fsvelte-flex?ref=badge_large)
