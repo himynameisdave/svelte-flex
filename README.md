@@ -25,6 +25,10 @@ A simple and reusable flexbox component for [Svelte](https://svelte.dev/).
 
 [**Try me on CodeSandbox!**](https://codesandbox.io/s/svelte-flex-5s45y)
 
+### Requirements
+
+This package requires at least `svelte@3.46.2` to work, as it makes use of the [style directives](https://github.com/sveltejs/rfcs/pull/42) feature introduced in the [`3.46.x` version](https://github.com/sveltejs/svelte/blob/master/CHANGELOG.md#3462).
+
 ### Installation
 
 This package is available on NPM, and you can install it with `npm` or `yarn`:
