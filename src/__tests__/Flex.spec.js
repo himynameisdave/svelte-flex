@@ -9,10 +9,10 @@ function renderFlex(props) {
 }
 
 describe('<Flex /> component', () => {
-  
+
   test('returns an element with the "flex" class', () => {
     const container = renderFlex();
-    expect(container).toHaveClass('flex');
+    expect(container).toHaveStyle('display: flex');
   });
 
   test('the default values work', () => {
@@ -26,7 +26,7 @@ describe('<Flex /> component', () => {
     const container = renderFlex({ label: 'flexy-mcflexbox' });
     expect(container).toHaveAttribute('label', 'flexy-mcflexbox');
   });
-  
+
   test('custom classNames will be applied to the element', () => {
     const container = renderFlex({ class: 'custom-class' });
     expect(container.classList.contains('custom-class')).toBe(true);
@@ -60,30 +60,30 @@ describe('<Flex /> component', () => {
       expect(container).toHaveStyle('align-items: flex-start');
       expect(container).not.toHaveStyle('align-items: center'); // default
     });
-    
+
     test('center', () => {
       const container = renderFlex({ align: 'center' });
       expect(container).toHaveStyle('align-items: center');
     });
-    
+
     test('end', () => {
       const container = renderFlex({ align: 'end' });
       expect(container).toHaveStyle('align-items: flex-end');
       expect(container).not.toHaveStyle('align-items: center'); // default
     });
-    
+
     test('stretch', () => {
       const container = renderFlex({ align: 'stretch' });
       expect(container).toHaveStyle('align-items: stretch');
       expect(container).not.toHaveStyle('align-items: center'); // default
     });
-    
+
     test('bad value', () => {
       const container = renderFlex({ align: 'oops' });
       expect(container).not.toHaveStyle('align-items: center'); // default
     });
   });
-  
+
   describe('justify prop', () => {
     // 'start' | 'center' | 'end' | 'around' | 'between' | 'evenly'
     test('start', () => {
@@ -91,7 +91,7 @@ describe('<Flex /> component', () => {
       expect(container).toHaveStyle('justify-content: flex-start');
       expect(container).not.toHaveStyle('justify-content: center'); // default
     });
-    
+
     test('center', () => {
       const container = renderFlex({ justify: 'center' });
       expect(container).toHaveStyle('justify-content: center');
@@ -102,38 +102,38 @@ describe('<Flex /> component', () => {
       expect(container).toHaveStyle('justify-content: flex-end');
       expect(container).not.toHaveStyle('justify-content: center'); // default
     });
-    
+
     test('around', () => {
       const container = renderFlex({ justify: 'around' });
       expect(container).toHaveStyle('justify-content: space-around');
       expect(container).not.toHaveStyle('justify-content: center'); // default
     });
-    
+
     test('between', () => {
       const container = renderFlex({ justify: 'between' });
       expect(container).toHaveStyle('justify-content: space-between');
       expect(container).not.toHaveStyle('justify-content: center'); // default
     });
-    
+
     test('evenly', () => {
       const container = renderFlex({ justify: 'evenly' });
       expect(container).toHaveStyle('justify-content: space-evenly');
       expect(container).not.toHaveStyle('justify-content: center'); // default
     });
-    
+
     test('bad value', () => {
       const container = renderFlex({ justify: 'oops' });
       expect(container).not.toHaveStyle('justify-content: center'); // default
     });
   });
-  
+
   describe('reverse prop', () => {
     test('row-reverse', () => {
       const container = renderFlex({ direction: 'row', reverse: true });
       expect(container).toHaveStyle('flex-direction: row-reverse');
       expect(container).not.toHaveStyle('flex-direction: row'); // default/fallback
     });
-    
+
     test('column-reverse', () => {
       const container = renderFlex({ direction: 'column', reverse: true });
       expect(container).toHaveStyle('flex-direction: column-reverse');
