@@ -4,6 +4,7 @@
   export let justify = 'center';
   export let reverse = false;
   export let gap = '0';
+  export let inline = false;
 
   //  'start' | 'center' | 'end' | 'stretch'
   const alignMap = {
@@ -25,12 +26,13 @@
 
 
   $: directionWithReverse = reverse ? `${direction}-reverse` : direction;
+  $: diplayProp = inline === true ? 'inline-flex' : 'flex';
 </script>
 
 <div
   {...$$restProps}
   class={$$restProps.class}
-  style:display="flex"
+  style:display={diplayProp}
   style:flex-direction={directionWithReverse}
   style:align-items={alignMap[align]}
   style:justify-content={justifyMap[justify]}

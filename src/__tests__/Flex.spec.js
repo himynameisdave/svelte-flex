@@ -152,4 +152,30 @@ describe('<Flex /> component', () => {
       expect(container).toHaveStyle('gap: 1rem');
     });
   })
+
+  describe('inline prop', () => {
+    test('has inline prop set to true', () => {
+      const container = renderFlex({ inline: true });
+      expect(container).toHaveStyle('display: inline-flex');
+      expect(container).not.toHaveStyle('display: flex');
+    });
+
+    test('has inline prop set to false', () => {
+      const container = renderFlex({ inline: false });
+      expect(container).toHaveStyle('display: flex');
+      expect(container).not.toHaveStyle('display: inline-flex');
+    });
+
+    test('does not has inline prop', () => {
+      const container = renderFlex();
+      expect(container).toHaveStyle('display: flex');
+      expect(container).not.toHaveStyle('display: inline-flex');
+    });
+
+    test('bad value', () => {
+      const container = renderFlex({ inline: 'oops' });
+      expect(container).toHaveStyle('display: flex');
+      expect(container).not.toHaveStyle('display: inline-flex');
+    });
+  })
 });

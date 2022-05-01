@@ -18,6 +18,7 @@ export interface FlexProps {
   direction?: Direction;
   reverse?: boolean;
   gap?: string;
+  inline?: boolean;
 }
 
 export default class Flex extends SvelteComponentTyped<FlexProps> {}
