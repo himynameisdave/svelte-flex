@@ -142,14 +142,22 @@ describe('<Flex /> component', () => {
   });
 
   describe('gap prop', () => {
-    test('gap default value', () => {
-      const container = renderFlex();
-      expect(container).toHaveStyle('gap: 0');
-    });
-
-    test('gap 1 rem', () => {
+    test('has gap prop set to 1 rem', () => {
       const container = renderFlex({ gap: '1rem' });
       expect(container).toHaveStyle('gap: 1rem');
+      expect(container).not.toHaveStyle('gap: 0rem');
+    });
+
+    test('does not has gap prop', () => {
+      const container = renderFlex();
+      expect(container).toHaveStyle('gap: 0');
+      expect(container).not.toHaveStyle('gap: 1rem');
+    });
+
+    test('bad value', () => {
+      const container = renderFlex({ gap: 'oops' });
+      expect(container).not.toHaveStyle('gap: 1rem');
+      expect(container).not.toHaveStyle('gap: 0');
     });
   })
 });
