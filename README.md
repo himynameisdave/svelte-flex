@@ -2,7 +2,7 @@
   <h1>svelte-flex</h1>
   <p style="font-style: italic;">💪 A simple and reusable flexbox component for Svelte.</p>
   <div>
-    <a href='https://github.com/himynameisdave/svelte-flex/actions?query=workflow%3Atest+branch%3Amaster'>
+    <a href='https://github.com/himynameisdave/svelte-flex/actions?query=workflow%3Atest+branch%3Amain'>
       <img src="https://github.com/himynameisdave/svelte-flex/workflows/test/badge.svg" alt="GitHub Actions - Test Workflow Badge" />
     </a>
     <a href="https://packagephobia.now.sh/result?p=svelte-flex">
@@ -10,6 +10,9 @@
     </a>
     <a href="https://bundlephobia.com/result?p=svelte-flex">
         <img src="https://img.shields.io/bundlephobia/min/svelte-flex.svg" alt="Bundle size (minified)" />
+    </a>
+    <a title="MadeWithSvelte.com Shield" href="https://madewithsvelte.com/p/svelte-frappe-charts/shield-link">
+      <img src="https://madewithsvelte.com/storage/repo-shields/2411-shield.svg" />
     </a>
   </div>
 </div>
