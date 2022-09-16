@@ -11,6 +11,9 @@
     <a href="https://bundlephobia.com/result?p=svelte-flex">
         <img src="https://img.shields.io/bundlephobia/min/svelte-flex.svg" alt="Bundle size (minified)" />
     </a>
+    <a title="MadeWithSvelte.com Shield" href="https://madewithsvelte.com/p/svelte-frappe-charts/shield-link">
+      <img src="https://madewithsvelte.com/storage/repo-shields/2411-shield.svg" />
+    </a>
   </div>
 </div>
 
