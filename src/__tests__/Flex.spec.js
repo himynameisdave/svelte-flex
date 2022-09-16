@@ -140,4 +140,44 @@ describe('<Flex /> component', () => {
       expect(container).not.toHaveStyle('flex-direction: column'); // default/fallback
     });
   });
+
+  describe('gap prop', () => {
+    test('has gap prop set to 1 rem', () => {
+      const container = renderFlex({ gap: '1rem' });
+      expect(container).toHaveStyle('gap: 1rem');
+      expect(container).not.toHaveStyle('gap: 0rem');
+    });
+
+    test('bad value', () => {
+      const container = renderFlex({ gap: 'oops' });
+      expect(container).not.toHaveStyle('gap: 1rem');
+      expect(container).not.toHaveStyle('gap: 0');
+    });
+  })
+
+  describe('inline prop', () => {
+    test('has inline prop set to true', () => {
+      const container = renderFlex({ inline: true });
+      expect(container).toHaveStyle('display: inline-flex');
+      expect(container).not.toHaveStyle('display: flex');
+    });
+
+    test('has inline prop set to false', () => {
+      const container = renderFlex({ inline: false });
+      expect(container).toHaveStyle('display: flex');
+      expect(container).not.toHaveStyle('display: inline-flex');
+    });
+
+    test('does not has inline prop', () => {
+      const container = renderFlex();
+      expect(container).toHaveStyle('display: flex');
+      expect(container).not.toHaveStyle('display: inline-flex');
+    });
+
+    test('bad value', () => {
+      const container = renderFlex({ inline: 'oops' });
+      expect(container).toHaveStyle('display: flex');
+      expect(container).not.toHaveStyle('display: inline-flex');
+    });
+  })
 });
