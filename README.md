@@ -68,6 +68,8 @@ All props are optional (as they all have default values).
 [`align`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items) | `'start'` \| `'center'` \| `'end'` \| `'stretch'` | `'center'`
 [`justify`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) | `'start'` \| `'center'` \| `'end'` \| `'around'` \| `'between'` \| `'evenly'`  | `'center'`
 [`reverse`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction#Result) | `true` \| `false` | `false`
+[`inline`](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements) | `true` \| `false` | `false`
+[`gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) | `string` | `false`
 
 Check out the [test suite](https://github.com/himynameisdave/svelte-flex/blob/master/src/__tests__/Flex.spec.js#L11) if you're unsure what CSS styles are applied by these props.
 
