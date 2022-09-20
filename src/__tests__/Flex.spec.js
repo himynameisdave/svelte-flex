@@ -140,4 +140,18 @@ describe('<Flex /> component', () => {
       expect(container).not.toHaveStyle('flex-direction: column'); // default/fallback
     });
   });
+
+  describe('gap prop', () => {
+    test('has gap prop set to 1 rem', () => {
+      const container = renderFlex({ gap: '1rem' });
+      expect(container).toHaveStyle('gap: 1rem');
+      expect(container).not.toHaveStyle('gap: 0rem');
+    });
+
+    test('bad value', () => {
+      const container = renderFlex({ gap: 'oops' });
+      expect(container).not.toHaveStyle('gap: 1rem');
+      expect(container).not.toHaveStyle('gap: 0');
+    });
+  })
 });

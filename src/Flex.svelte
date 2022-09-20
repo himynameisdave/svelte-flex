@@ -3,6 +3,7 @@
   export let align = 'center';
   export let justify = 'center';
   export let reverse = false;
+  export let gap = undefined;
 
   //  'start' | 'center' | 'end' | 'stretch'
   const alignMap = {
@@ -22,6 +23,7 @@
     evenly: 'space-evenly',
   };
 
+
   $: directionWithReverse = reverse ? `${direction}-reverse` : direction;
 </script>
 
@@ -32,6 +34,7 @@
   style:flex-direction={directionWithReverse}
   style:align-items={alignMap[align]}
   style:justify-content={justifyMap[justify]}
+  style:gap={gap}
 >
   <slot />
 </div>
