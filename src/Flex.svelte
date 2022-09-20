@@ -3,7 +3,7 @@
   export let align = 'center';
   export let justify = 'center';
   export let reverse = false;
-  export let gap = '0';
+  export let gap = undefined;
 
   //  'start' | 'center' | 'end' | 'stretch'
   const alignMap = {
