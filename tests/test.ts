@@ -29,7 +29,7 @@ test('column - renders with flex positions at the start', async ({ page }) => {
 test('reverse - will apply proper reverse direction', async ({ page }) => {
   await page.goto('/');
 
-  const element = page.getByTestId('additionalProps');
+  const element = page.getByTestId('reverse');
   await expect(element).toHaveCSS('display', 'flex');
   await expect(element).toHaveCSS('flex-direction', 'row-reverse');
 });
