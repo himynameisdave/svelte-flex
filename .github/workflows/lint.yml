@@ -22,4 +22,4 @@ jobs:
       - name: Install
         run: yarn install
       - name: Lint
-        run: yarn test
+        run: yarn lint
