@@ -1,4 +1,4 @@
-name: test
+name: lint
 on:
   push:
     branches: [main]
@@ -22,7 +22,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install
         run: yarn install
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
-      - name: Test
-        run: yarn test
+      - name: Lint
+        run: yarn lint

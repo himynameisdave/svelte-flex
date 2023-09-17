@@ -1,12 +1,14 @@
-<script>
-  export let direction = 'row';
-  export let align = 'center';
-  export let justify = 'center';
+<script lang="ts">
+  import type { Align, Direction, Justify } from './types.ts';
+
+  export let direction: Direction = 'row';
+  export let align: Align = 'center';
+  export let justify: Justify = 'center';
   export let reverse = false;
-  export let gap = undefined;
+  export let gap: string | undefined;
 
   //  'start' | 'center' | 'end' | 'stretch'
-  const alignMap = {
+  const alignMap: Record<Align, string> = {
     start: 'flex-start',
     center: 'center',
     end: 'flex-end',
@@ -14,7 +16,7 @@
   };
 
   //  'start' | 'center' | 'end' | 'around' | 'between' | 'evenly'
-  const justifyMap = {
+  const justifyMap: Record<Justify, string> = {
     start: 'flex-start',
     center: 'center',
     end: 'flex-end',
@@ -29,12 +31,12 @@
 
 <div
   {...$$restProps}
-  class={$$restProps.class}
   style:display="flex"
   style:flex-direction={directionWithReverse}
   style:align-items={alignMap[align]}
   style:justify-content={justifyMap[justify]}
-  style:gap={gap}
+  style:gap
+  class={$$restProps.class}
 >
   <slot />
 </div>

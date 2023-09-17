@@ -30,6 +30,8 @@ A simple and reusable flexbox component for [Svelte](https://svelte.dev/).
 
 ### Requirements
 
+This package assumes you are using at least Svelte `4.x`, and that is the only major version which is actively tested. It may work in some older versions, however
+
 This package requires at least `svelte@3.46.2` to work, as it makes use of the [style directives](https://github.com/sveltejs/rfcs/pull/42) feature introduced in the [`3.46.x` version](https://github.com/sveltejs/svelte/blob/master/CHANGELOG.md#3462).
 
 ### Installation
@@ -37,9 +39,9 @@ This package requires at least `svelte@3.46.2` to work, as it makes use of the [
 This package is available on NPM, and you can install it with `npm` or `yarn`:
 
 ```
-npm install svelte-flex
+npm install -D svelte-flex
 
-yarn add svelte-flex
+yarn add -D svelte-flex
 ```
 
 ### Usage
@@ -91,6 +93,10 @@ Any additional props you provide to `Flex` will be spread onto the root element.
   <span>Flex child</span>
 </div>
 ```
+
+### "Why does this exist?"
+
+I get plenty of comments asking about why this package exists and what value it adds, especially when you could just add your own flex styles and be done with it. This package helps do this in a reusable way so you don't have to think about it, as well as making it easier for folks who may not be as familiar with working with flexbox. Just a reminder that _✨you don't have to use this package✨_ if it doesn't suit your needs.
 
 ### Contributing
 
