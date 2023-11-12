@@ -55,7 +55,7 @@
     "eslint-config-himynameisdave": "^8.1.0",
     "husky": "^8.0.3",
     "less": "^4.2.0",
-    "lint-staged": "^14.0.1",
+    "lint-staged": "^15.1.0",
     "np": "^8.0.4",
     "publint": "^0.2.2",
     "svelte": "^4.2.0",
