@@ -1,16 +1,10 @@
-import type { PlaywrightTestConfig } from '@playwright/test';
+import { defineConfig } from '@playwright/test';
 
-const config: PlaywrightTestConfig = {
-	webServer: {
-		command: 'npm run build && npm run preview',
-		port: 4173
-	},
-	testDir: 'tests',
-	testMatch: /(.+\.)?(test|spec)\.[jt]s/,
-	//	Uncomment this to enable headful browser, useful for debugging.
-	// use: {
-	// 	headless: false,
-	// },
-};
+export default defineConfig({
+  webServer: {
+    command: 'npm run build && npm run preview',
+    port: 4173
+  },
 
-export default config;
+  testDir: 'e2e'
+});
